@@ -1,0 +1,60 @@
+/* VideoPlayer.css */
+.video-container {
+    position: relative;
+    width: 80%; /* Adjust as needed */
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: auto;
+    cursor: pointer; /* Indicate it's clickable */
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute controls evenly */
+  }
+  
+  .controls button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+  }
+  
+  .progress-bar {
+    flex-grow: 1; /* Allow progress bar to take up available space */
+    margin: 0 10px;
+  }
+  .volume-controls{
+      display: flex;
+      align-items: center;
+  }
+  .volume-controls input{
+      margin-left: 10px;
+  }
+  .video-wrapper{
+    position: relative;
+  }
+  .skip-btn{
+    position: absolute;
+    bottom: 8%;
+    right: 4%;
+    border-radius: 3px;
+    width: max-content;
+    height: 50px;
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    cursor: pointer;
+  }

@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+$white: #fff;
+$black: #000;
+$gray: #b3b3b3;
+$orange: orange;
+$red: #e50914;
+
+.auth-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://bit.ly/2E3scwW);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $gray;
+  background-blend-mode: multiply;
+
+  .logo {
+    position: absolute;
+    align-self: flex-start;
+    left: 10px;
+    
+    img {
+      height: 75px;
+      width: auto;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    background: rgba(000, 000, 000, 0.75);
+    border-radius: 4px;
+    width: 400px;
+    height: 500px;
+    padding: 60px 68px 40px;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 2.2rem;
+      font-weight: 600;
+      color: $white;
+    }
+
+    &__group {
+     margin-bottom: 20px;
+      &__wrapper{
+        position: relative;
+        z-index: 10;
+        display: flex;
+        background: rgba(000, 000, 000, 0.75);
+        &__label {
+            position: absolute;
+            z-index: 149;
+            color: $gray;
+            font-size: 0.9rem;
+            top: 30px;
+            left: 18px;
+            transition: all 300ms ease-in;
+          }
+    
+         
+          &__input {
+            width: 100%;
+            position: relative;
+            z-index: 150;
+            background: rgba(000, 000, 000, 0);
+         
+            border: 0.1px solid rgba(255, 255, 255, 0.75) ;
+            border-radius: 4px;
+            opacity: 1;
+            font-size: 1rem;
+            color: $white;
+            line-height: 50px;
+            padding: 12px 18px 0;
+    
+            &:focus + .login__group__wrapper__label {
+              top: 15px;
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+     
+    }
+
+    &__sign-in {
+      margin: 24px 0 12px;
+      padding: 16px;
+      color: $white;
+      background: $red;
+      font-size: 0.9rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    &__secondary-cta {
+      position: relative;
+      z-index: 100;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 20px;
+
+      &__text {
+        opacity: 1;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.7);
+        text-decoration: none;
+
+
+        &--need-help {
+          transition: all 0.3s ease-in;
+          color: rgba(255,255,255,1);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  font-size: 0.7rem;
+}
+
+.warning-input {
+
+    color: #E50914 ;
+    margin-top: 6px;
+    font-size: 0.8rem;
+    
+}
+
+// .login-container{
+//     background: url("https://bit.ly/2E3scwW") no-repeat center center; 
+//     background-size: cover;
+//     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     @media screen and (max-width: 740px) {
+//         background: black;
+//     }
+
+
+// .login {
+//     margin: 0 auto;
+//     width: 400px;
+//     background-color: rgba(0, 0, 0, 0.6);
+//     border-radius: 5px;
+//     padding: 30px 70px 143px;
+    
+
+//     h1 {
+//         color: white;
+//         padding-bottom: 10px;
+//     }
+
+//     @media screen and (max-width: 740px) {
+//         padding: 0 10px;
+//         width: 100%;
+//     }
+
+
+// .input-text {
+//     margin-bottom: 20px;
+
+//     input {
+//         width: 100%;
+//         height: 45px;
+//         background-color: #333;
+//         color: white;
+//         border-radius: 5px;
+//         border: none;
+//         outline: transparent;
+//         text-indent: 18px;
+
+//         &::placeholder {
+//             font-size: 1rem;
+//             color: #999;
+//         }
+//     }
+// }
+
+// .signin-button {
+//     margin-top: 20px;
+//     width: 100%;
+//     padding: 13px;
+//     border-radius: 5px;
+//     background-color: red;
+//     color: white;
+//     border: none;
+//     font-weight: bold;
+//     font-size: 1.05rem;
+//     cursor: pointer;
+// }
+
+// .remember-flex {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 10px;
+//     font-size: 0.8rem;
+// }
+
+// .color_text {
+//     color: #b3b3b3;
+// }
+
+// .color_link {
+//     color: #737373;
+
+//     &:hover {
+//         text-decoration: underline;
+//     }
+// }
+
+// .signup-link {
+//     color: white;
+//     text-decoration: none;
+
+//     &:hover {
+//         text-decoration: underline;
+//     }
+// }
+
+// .warning-input {
+
+//     color: #e87c03;
+//     margin-top: 6px;
+//     font-size: 0.8rem;
+// }
+
+// .log_face {
+//     text-decoration: none;
+//     margin-left: 10px;
+//     font-size: 0.8rem;
+// }
+
+// .login-face {
+//     margin: 50px 0 15px;
+//     color: #8c8c8c;
+// }
+
+// .new-members {
+//     margin-bottom: 10px;
+//     color: #8c8c8c;
+// }
+
+// .help {
+//     a {
+//         text-decoration: none;
+
+//         &:hover {
+//             text-decoration: underline;
+//         }
+//     }
+// }
+
+// .protection {
+//     font-size: 0.8rem;
+//     color: #8c8c8c;
+
+//     a {
+//         text-decoration: none;
+
+//         &:hover {
+//             text-decoration: underline;
+//         }
+//     }
+// }
+
+// .tel-link {
+//     text-decoration: none;
+//     color: #757575;
+
+//     &:hover {
+//         text-decoration: underline;
+//     }
+// }
+
+// }
+// }
+
+
+
+
+
+body {
+  background-color: #000;
+}
+
+.main {
+  background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/6cefb2f5-90be-4f57-adc4-f6c3c579273d/3943990c-f4e0-4147-82ad-f531e2b547f3/IN-en-20240401-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+  height: 150vh;
+  background-size:100% 100%;
+  position: relative;
+  background-position: center center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+}
+
+.main .box {
+  height: 150vh;
+  opacity: 0.69;
+  background-color: #000;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: auto;
+  height: 62px;
+  padding-top: 15px;
+}
+
+nav img {
+  color: red;
+  width: 150px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button, nav select {
+  position: relative;
+  z-index: 300;
+}
+
+.main nav div{
+  display: flex;
+  justify-content: space-around;
+  min-width: 20vw;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: 129vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 13px;
+  padding: 0 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero> :nth-child(1) {
+  /*apply to first immediate child only*/
+  font-size: 48px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.hero:nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero:nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero.end span {
+  margin-top: 40px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.hero.end input{
+  padding: 15px 200px 15px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.separation {
+  background-color: rgb(46, 44, 44, 0.9);
+  height: 7px;
+}
+
+.btn {
+  padding: 6px 15px;
+  font-weight: 500;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.red-btn {
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  padding: 12px 30px;
+  border-radius: 4px;
+  font-size: 20px;
+  border: none;
+}
+
+.main input {
+  padding: 15px 200px 15px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-red-sm {
+  background-color: rgba(255, 0, 0, 0.95);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.first {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+}
+
+
+.sec-img {
+  position: relative;
+}
+
+.sec-img img {
+  position: relative;
+  width: 38vw;
+  z-index: 10;
+}
+
+.sec-img video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -54%);
+  max-width: 73%;
+  max-height: 80%;
+}
+
+.first>div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.first>div :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+  line-height: 50px;
+}
+
+.first>div :nth-child(2) {
+  font-size: 24px;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.third .sec-img video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -89%);
+  max-width: 63%;
+  max-height: 80%;
+}
+
+.faq{
+  padding: 70px;
+}
+
+.faq h2{
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+
+.faq-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-box li{
+  width: 72vw;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  background-color: rgba(60, 60, 60,0.74);
+  margin: 5px auto;
+  font-size: 24px;
+  font-weight: 300;
+  cursor: pointer;
+  color:white;
+  transition: all 0.5s ease-out;
+
+}
+
+.faq-box li:hover{
+  background-color: rgba(95, 94, 94, 0.74);
+}
+
+
+.final{
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+  .first{
+      flex-wrap: wrap;
+  }
+  .hero> :nth-child(1){
+      font-size: 36px;
+  }
+  .first>div :first-child{
+      font-size: 36px;
+      text-align: center;
+  }
+  .first>div :nth-child(2){
+      font-size: 16px;
+      text-align: center;
+  }
+  .faq h2{
+      font-size: 36px;
+  }
+  nav img{
+      width: 120px;
+  }
+  .main input, .hero.end input{
+      padding: 10px 115px 10px 10px 
+  }
+  .red-btn{
+      font-size: 18px;
+      padding: 10px 20px;
+  }
+  .hero-buttons{
+      flex-wrap: wrap;
+  }
+  .main nav div{
+      min-width: 20vw;
+  }
+  .sec-img img {
+      width: 70vw;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+  .hero> :nth-child(1){
+      font-size: 24px;
+  }
+  .hero> :nth-child(2){
+      font-size: 18px;
+  }
+  .hero> :nth-child(3){
+      font-size: 20px;
+  }
+  .first>div :first-child{
+      font-size: 24px;
+  }
+
+  nav{
+      margin: 0 20px ;
+      max-width: 100%;
+  }
+  nav img{
+      width: 100px;
+  }
+  .main nav div{
+      min-width: 35vw;
+  }
+  .faq h2{
+      font-size: 24px;
+  }
+  .faq-box li{
+      font-size: 18px;
+      padding: 18px;
+  }
+  .faq-box li svg{
+      width: 24px;
+      height: 24px;
+  }
+  .sec-img img {
+      width: 80vw;
+  }
+}

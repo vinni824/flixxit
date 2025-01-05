@@ -1,0 +1,173 @@
+@import "../../mixins.scss";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+$white: #fff;
+$black: #000;
+$gray: #b3b3b3;
+$orange: orange;
+$red: #e50914;
+.profilePage {
+    min-height: 700px;
+    max-width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-top: 100px;
+    .resultNotFound {
+        font-size: 24px;
+        color: var(--black-light);
+    }
+    .pageTitle {
+        font-size: 24px;
+        line-height: 34px;
+        color: white;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }   
+       .bodyText{
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+  
+    .container {
+        color: white;
+        .name-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 20px;
+        }
+       
+        .img-wrapper img{
+              border-radius: 6px;
+             max-width: 180px;
+             width: 90%;
+             min-width: 100px;
+        }
+        .save-button{
+            width: 100%;
+            position: relative;
+            z-index: 150;
+            background: rgba(000, 000, 000, 1);
+            border: none;
+            border-radius: 4px;
+            opacity: 1;
+            font-size: 1rem;
+            color: $white;
+            line-height: 50px;
+            padding: 12px 18px 0;
+            cursor: pointer;
+
+            &:hover{
+                background: rgba(000, 000, 000, 0.25);    
+            }
+        }
+        .cancel-button{
+            width: 100%;
+            position: relative;
+            z-index: 150;
+            background: rgba(000, 000, 000, 0);
+            border: none;
+            border-radius: 4px;
+            opacity: 1;
+            font-size: 1rem;
+            color: $white;
+            line-height: 50px;
+            padding: 12px 18px 0;
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover{
+                background: $gray;    
+                transition: 0.2s ease;
+            }
+        }
+        .logout-button{
+
+            width: 100%;
+            position: relative;
+            z-index: 150;
+            margin-top: 25px;
+            border: 1px solid $gray;
+            background-color: transparent;
+            border-radius: 4px;
+            opacity: 1;
+            font-size: 1rem;
+            color: $white;
+            line-height: 50px;
+            padding: 12px 18px 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s ease;
+            &:hover{
+                background: #E50914;    
+                transition: 0.2s ease;
+                border:none;
+            }
+        }
+        .login {
+            display: flex;
+            flex-direction: column;
+         
+            border-radius: 4px;
+            width: 100%;
+            padding: 20px 0px;
+        
+      
+            &__title {
+              margin-bottom: 20px;
+              font-size: 2.2rem;
+              font-weight: 600;
+              color: $white;
+            }
+        
+            &__group {
+             margin-bottom: 20px;
+             width: 100%;
+              &__wrapper{
+                position: relative;
+                z-index: 10;
+                display: flex;
+                background: rgba(000, 000, 000, 0.75);
+                &__label {
+                    position: absolute;
+                    z-index: 1;
+                    color: $gray;
+                    font-size: 0.9rem;
+                    top: 30px;
+                    left: 18px;
+                    transition: all 300ms ease-in;
+                  }
+            
+                 
+                  &__input {
+                    width: 100%;
+                    position: relative;
+                    z-index: 2;
+                    background: rgba(000, 000, 000, 0);
+                 
+                    border: 0.1px solid rgba(255, 255, 255, 0.75) ;
+                    border-radius: 4px;
+                    opacity: 1;
+                    font-size: 1rem;
+                    color: $white;
+                    line-height: 50px;
+                    padding: 12px 18px 0;
+            
+                    &:focus + .login__group__wrapper__label {
+                      top: 15px;
+                      font-size: 0.7rem;
+                    }
+                  }
+               
+                }
+        
+             
+            }
+        
+         
+        
+         
+          }
+       
+    }
+}
