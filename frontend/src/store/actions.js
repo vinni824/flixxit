@@ -15,7 +15,7 @@ import axios from "axios";
 
 import { Button, message } from "antd";
 
-const BASE_URL = "https://backend-silk-chi-82.vercel.app/api";
+const BASE_URL = "http://localhost:5000/api";
 
 export function login(params) {
   return async function (dispatch, getState) {
