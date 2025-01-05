@@ -3,6 +3,7 @@
 ## Project Overview
 
 Flixxit aims to be a web application with the likeness and basic feature set of OTT platforms such as Netflix, Prime Video, and AppleTV+. While the actual products are built using a complex web of microservices and infrastructure, the objective here is to build the core user functionality.
+**Live URL**: https://y-pzt5crmeo-vanashas-projects.vercel.app
 
 ### Feature Set
 
@@ -28,7 +29,7 @@ Flixxit aims to be a web application with the likeness and basic feature set of 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/flixxit.git
+   git clone https://github.com/vinni824/flixxit.git
    ```
 2. Navigate to the frontend directory:
    ```bash
